@@ -23,12 +23,12 @@ interface AppState {
   setSidebarOpen: (open: boolean) => void;
   toggleFavorite: (exerciseId: string) => void;
   setUserProfile: (data: {
-    name?: string;
-    avatar?: string;
-    weight?: number;
-    height?: number;
-    goal?: string;
-    level?: string;
+    userName?: string;
+    userAvatar?: string;
+    userWeight?: number;
+    userHeight?: number;
+    userGoal?: string;
+    userLevel?: string;
     weeklyGoal?: number;
   }) => void;
 }

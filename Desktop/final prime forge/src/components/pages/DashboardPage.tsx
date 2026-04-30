@@ -134,13 +134,13 @@ export function DashboardPage() {
 
   const handleSave = () => {
     store.setUserProfile({
-      name: editData.name.trim() || undefined,
-      weight: editData.weight,
-      height: editData.height,
-      goal: editData.goal,
-      level: editData.level,
+      userName: editData.name.trim() || '',
+      userAvatar: editData.avatar,
+      userWeight: editData.weight,
+      userHeight: editData.height,
+      userGoal: editData.goal,
+      userLevel: editData.level,
       weeklyGoal: editData.weeklyGoal,
-      avatar: editData.avatar,
     });
     setIsEditing(false);
     setShowAvatarPicker(false);
